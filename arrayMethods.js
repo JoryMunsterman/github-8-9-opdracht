@@ -19,6 +19,13 @@ const inventors = [
 // Verwachte uitkomst:
 // [{ first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 }, { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 }]
 
+const zestiendeEeuw = inventors.filter((inventor) => {
+  //return years boven 1500 en onder 1600
+    return inventor.year <= 1600 && inventor.year >= 1500
+  })
+//print gevraagde getallen
+console.log(zestiendeEeuw)
+
 
 
 // 2. Maak een array met daarin alle geboortejaren van de uitvinders
