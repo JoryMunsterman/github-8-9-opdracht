@@ -92,12 +92,24 @@ console.log(nameOrder)
 // ]
 
 const yearsLivedOrder = inventors.sort((a, b) => {
-  if((a.passed - a.year) < (b.passed - b.year)) {
+  if((b.passed - b.year) < (a.passed - a.year)) {
     return -1
   }
 })
-console.log(yearsLivedOrder) //uitkomst is verkeerde volgorde. heb al 1 of 0 geprobeerd.
+console.log(yearsLivedOrder)
 
+// const passedPerson = inventors.find((inventor) => {
+//   return inventor.passed
+// })
+// const yearBorn = inventors.find((inventor) => {
+//   return inventor.year
+// })
+// const yearsLived = passedPerson - yearBorn
+// console.log(yearsLived)
+//
+// const livedYears = inventors.sort((a, b) => {
+//   if (a.)
+// })
 
 // 6. Vind de gegevens over de uitvinder wiens achternaam 'Edison' is.
 // Verwachte uitkomst: { first: 'Thomas', last: 'Edison', year: 1847, passed: 1931 }
